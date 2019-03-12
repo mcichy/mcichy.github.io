@@ -1,11 +1,16 @@
 
 <!DOCTYPE html>
 <html>
-<h1>Current Host: mcichy.github.io</h1>
-<h2>Iframe Example</h2>
-<p>This is an iframe that points to a page at home.appian.com</p>
+<head>
+<!-- This script loads the Appian Web components; change it to your Appian server's domain -->
+<script src="https://gsopsdev.appiancloud.com/suite/tempo/ui/sail-client/embeddedBootstrap.nocache.js" id="appianEmbedded"></script>
+</head>
+<body>
+    <h1>Current Host: mcichy.github.io</h1>
+    <h2>Embedded Appian @ gsopsdev.appiancloud.com</h2>
 
-<iframe id="helloThere" src="https://home.appian.com/suite" style="height:800px;width:800px"></iframe>
-
+    <!-- This custom HTML element specifies an Appian report to embed on the HTML page -->
+    <!--<appian-record-view recordTypeUrlStub="XdwlmA" recordIdentifier="10" recordViewUrlStub="summary"></appian-record-view>-->
+<appian-report reportUrlStub="kEFVbQ"></appian-report>
 </body>
 </html>
